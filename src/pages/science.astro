@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<Base title="Science — Evergreen Assessments" description="Validated psychometrics, transparent practices, and fairness by design.">
+  <Header />
+  <main class="mx-auto max-w-6xl px-4 py-12">
+    <h1 class="text-2xl font-semibold">Science</h1>
+    <section class="mt-4 grid gap-6 md:grid-cols-2">
+      <article class="rounded-2xl border p-6">
+        <h2 class="font-medium">Validation philosophy</h2>
+        <p class="mt-2 text-sm text-neutral-700">We prioritize construct clarity, reliability, criterion validity, and longitudinal sensitivity. Methods include classical test theory and IRT as appropriate, with transparent reporting.</p>
+      </article>
+      <article class="rounded-2xl border p-6">
+        <h2 class="font-medium">Fairness & bias monitoring</h2>
+        <p class="mt-2 text-sm text-neutral-700">We evaluate differential item functioning and adverse impact, and monitor model‑mediated dialogue for biased suggestions.</p>
+      </article>
+      <article class="rounded-2xl border p-6">
+        <h2 class="font-medium">Privacy & data minimization</h2>
+        <p class="mt-2 text-sm text-neutral-700">Only essential data are collected for scoring and feedback. De‑identification and aggregation are standard for research metrics.</p>
+      </article>
+      <article class="rounded-2xl border p-6">
+        <h2 class="font-medium">Transparent roadmap</h2>
+        <p class="mt-2 text-sm text-neutral-700">Planned disclosures include measurement invariance studies, technical manuals, and release notes for any model changes affecting scores.</p>
+      </article>
+    </section>
+  </main>
+  <Footer />
+</Base>

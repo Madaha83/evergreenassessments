@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<Base title="About — Evergreen Assessments" description="Our mission and vision for evidence‑based leadership growth.">
+  <Header />
+  <main class="mx-auto max-w-6xl px-4 py-12">
+    <h1 class="text-2xl font-semibold">About</h1>
+    <section class="mt-4 grid gap-6 md:grid-cols-2">
+      <article class="rounded-2xl border p-6">
+        <h2 class="font-medium">Mission</h2>
+        <p class="mt-2 text-sm text-neutral-700">To transform leadership growth using validated psychometrics delivered by an intelligent assistant—making rigorous development accessible to individuals everywhere.</p>
+      </article>
+      <article class="rounded-2xl border p-6">
+        <h2 class="font-medium">Vision</h2>
+        <p class="mt-2 text-sm text-neutral-700">Evidence‑based assessments guiding better decisions across personal development and, over time, organizational practice—from development to performance.</p>
+      </article>
+    </section>
+
+    <section class="mt-8 rounded-2xl border p-6">
+      <h2 class="font-medium">Founder</h2>
+      <p class="mt-2 text-sm text-neutral-700">Matthew Hanson, Ph.D., Industrial‑Organizational Psychologist. Experience leading assessment research and implementation within U.S. military and government contexts; expertise in leadership assessment, validation, and feedback design.</p>
+    </section>
+  </main>
+  <Footer />
+</Base>

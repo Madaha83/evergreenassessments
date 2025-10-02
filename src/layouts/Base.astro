@@ -1,0 +1,29 @@
+---
+const { title = 'Evergreen Assessments', description = 'AI‑driven leadership assessments for real‑world growth.' } = Astro.props;
+const plausibleDomain = 'plausible.io';
+---
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+    <style>@font-face{font-family:Inter;src:url('/fonts/inter.woff2') format('woff2');font-display:swap;font-weight:100 900;font-style:normal}</style>
+    <link rel="canonical" href="{Astro.site}{Astro.url.pathname}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/favicon.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#1F6F4A" />
+    {import.meta.env.PUBLIC_PLAUSIBLE && (
+      <script defer data-domain={import.meta.env.PUBLIC_PLAUSIBLE} src={`https://${plausibleDomain}/js/script.js`}></script>
+    )}
+  </head>
+  <body class="min-h-full bg-white text-black antialiased font-sans">
+    <slot />
+  </body>
+</html>

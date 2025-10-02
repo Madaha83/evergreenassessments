@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<Base title="Contact — Evergreen Assessments" description="Get in touch for questions or pilot requests.">
+  <Header />
+  <main class="mx-auto max-w-3xl px-4 py-12">
+    <h1 class="text-2xl font-semibold">Contact</h1>
+    <p class="mt-2 text-neutral-700">Use the form below or email <a class="underline" href="mailto:hello@evergreenassessments.com">hello@evergreenassessments.com</a>.</p>
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks" class="mt-6 grid gap-3">
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+      <label class="text-sm">Name <input required name="name" class="mt-1 w-full rounded-xl border px-3 py-2" /></label>
+      <label class="text-sm">Email <input required type="email" name="email" class="mt-1 w-full rounded-xl border px-3 py-2" /></label>
+      <label class="text-sm">Message <textarea required name="message" rows="5" class="mt-1 w-full rounded-xl border px-3 py-2"></textarea></label>
+      <button class="mt-2 rounded-xl bg-black px-4 py-2 text-white">Send</button>
+    </form>
+  </main>
+  <Footer />
+</Base>

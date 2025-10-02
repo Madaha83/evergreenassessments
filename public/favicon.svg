@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Evergreen Assessments">
+  <defs>
+    <style>
+      .bg{fill:#1F6F4A}
+      .line{fill:none;stroke:#fff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" x="2" y="2" width="60" height="60" rx="12"></rect>
+  
+  <!-- Arrowhead (slightly wider for more natural slope) -->
+  <path class="line" d="M26 18 L32 10 L38 18"></path>
+  
+  <!-- Continuous trunk / arrow shaft -->
+  <path class="line" d="M32 10 V56"></path>
+  
+  <!-- Evenly spaced branches (one fewer for cleaner look) -->
+  <path class="line" d="M24 24 H40"></path>
+  <path class="line" d="M22 30 H42"></path>
+  <path class="line" d="M20 36 H44"></path>
+  <path class="line" d="M18 42 H46"></path>
+  <path class="line" d="M16 48 H48"></path>
+</svg>

@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<Base title="Product — Evergreen Assessments" description="How Evergreen Assessments works: discuss, assess, apply.">
+  <Header />
+  <main class="mx-auto max-w-6xl px-4 py-12">
+    <h1 class="text-2xl font-semibold">Product</h1>
+    <p class="mt-3 text-neutral-700 max-w-prose">A minimalist experience that moves from context‑setting conversation to targeted assessment to actionable feedback, without losing continuity.</p>
+
+    <section class="mt-8 grid gap-6 md:grid-cols-2">
+      <div class="rounded-2xl border p-6">
+        <h2 class="font-medium">Leadership constructs</h2>
+        <ul class="mt-3 list-disc pl-5 text-sm space-y-1">
+          <li>Self‑awareness</li>
+          <li>Communication</li>
+          <li>Decision‑making</li>
+          <li>Adaptability</li>
+          <li>Integrity</li>
+          <li>Psychological safety</li>
+          <li>Mentoring</li>
+          <li>Accountability</li>
+          <li>Self‑efficacy</li>
+        </ul>
+      </div>
+      <div class="rounded-2xl border p-6">
+        <h2 class="font-medium">Outputs</h2>
+        <p class="mt-2 text-sm text-neutral-700">Snapshot profile with reliability notes, key strengths, growth targets, and a focused 30‑day micro‑plan aligned to role context.</p>
+        <a href="#" class="mt-3 inline-block rounded-xl border px-3 py-2 text-sm">View Sample Report (coming soon)</a>
+      </div>
+    </section>
+
+    <section class="mt-8 rounded-2xl border p-6">
+      <h2 class="font-medium">Early access</h2>
+      <p class="mt-2 text-sm text-neutral-700">We’re inviting a limited number of individuals to preview the assessment experience. Join the waitlist or request a pilot conversation.</p>
+      <div class="mt-3 flex gap-3">
+        <a href="/contact" class="rounded-xl border px-3 py-2 text-sm">Request Pilot/Demo</a>
+        <a href="/#waitlist" class="rounded-xl bg-black px-3 py-2 text-sm text-white">Join Waitlist</a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Base>
